@@ -2,8 +2,8 @@ from copy import deepcopy
 
 import numpy as np
 
-class PacejkaTyreModelInterface:
 
+class PacejkaTyreModelInterface:
     def __init__(self, param):
         self.tyrF = param.tyrF
         self.tyrR = param.tyrR
