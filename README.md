@@ -1,12 +1,12 @@
 # Self-Driving Car
 
-The repository presents the results of the research project implemented in the framework of scientific collaboration with [Arrival](https://arrival.com/world/en). The global objective of the research project is to investigate the ability of using Reinforcement Learning (RL) for solving various problems concerned with Self-Driving Car. The car model, provided by Arrival, describes the dynamics of a real car in detail and, in particular, take into account the tire models describe the forces in the road-tire interactions according to the dynamic condition of the vehicle. The repository describes only the results of experiments, but does not include the model itself. 
+The repository presents the results of a research project implemented in the framework of scientific collaboration with [Arrival](https://arrival.com/world/en). The global objective of the research is to investigate the ability of using Reinforcement Learning (RL) for solving various problems concerned with Self-Driving Car. The car model, provided by Arrival, describes the dynamics of a real car in detail and, in particular, takes into account the tire models described the forces in the road-tire interactions according to the dynamic condition of the vehicle. The repository describes only the results of experiments, but does not include the model itself. 
 
 **Implementation:** Vitaly Kalev, Aleksandr Goranov, Anton Plaksin
 
 **Advisors:** Vladimir Bulaev
 
-## Introduction
+## Motivation
 
 A variety of driver assistance systems are being developed by automotive manufacturers to automate mundane driving operations, reduce driver burden and thus reduce highway accidents. Examples of such driver assistance systems under development include
 
@@ -28,13 +28,15 @@ notification systems
 
 These technologies will help reduce driver burden and make drivers less likely to be involved in accidents. This can also help reduce the resultant traffic congestion that accidents tend to cause.
 
+## Dynamic model
+
 In general, the car dynamics can be divided into two motion types:
 
 1. longitudinal motion, where the main task is to maintain the required speed;
 
 2. lateral motion, where the main task is to maintain the desired direction.
 
-## Longitudinal vehicle movement
+### Longitudinal vehicle movement
 
 The external longitudinal forces acting on the vehicle include aerodynamic drag forces, gravitational forces, longitudinal tire forces and rolling resistance forces.
 
@@ -98,7 +100,7 @@ If the longitudinal slip ratio is not small or if the road is slippery, then a n
 
 If the longitudinal slip ratio is not small or if the road is slippery, then a nonlinear tire model needs to be used to calculate the longitudinal tire force. The Pacejka “Magic Formula” model or the Dugoff tire model can be used to model tire forces in this case
 
-## Lateral vehicle movement
+### Lateral vehicle movement
 
 Such a model provides a mathematical description of the vehicle motion without considering the forces that affect the motion. The equations of motion are based purely on geometric relationships governing the system.
 
@@ -112,7 +114,9 @@ Figure below schematically shows the function of a yaw control system. In this f
 
 If the longitudinal slip ratio is not small or if the road is slippery, then a nonlinear tire model needs to be used to calculate the longitudinal tire force.
 
-## Task 1
+## Tasks
+
+### Task 1
 
 For example, forces and moments from the road act on each tire of the vehicle and highly influence the dynamics of the vehicle. If the longitudinal slip ratio is not small or if the road is slippery, then a nonlinear tire model needs to be used to calculate the longitudinal tire force. Algorithms of car control systems use information about the tire-road friction coefficient named $\mu$ and tuned to work with dry, wet or icy coating. Therefore, having information about this coefficient value allows to subsequently cost control in a more effectively. 
 
@@ -126,13 +130,13 @@ To solve the problem, we use cross-entropy method (CEM). Its parameters and othe
 
 Pic???
 
-## Task 2
+### Task 2
 
 Since a real car and its model can be different, it is important to study the stability issue of the algorithm performance iwth respect to the car parameters (such as length, mass, tire parameters, etc.). To investigate this, 
 
 ???
 
-## Task 3
+### Task 3
 
 
 ## References
