@@ -90,7 +90,7 @@ Coefficient of friction, ratio of the frictional force resisting the motion of t
 
 ![Screenshot](Files_for_README/Figure_Friction_Coefficient.png)
 
-As can be seen from the figure, in the case where longitudinal slip ratio is small (typically less than 0.1 on dry surface), as it is during normal driving, the longitudinal tire force is found to be proportional to the slip ratio.
+As can be seen from the figure below, in the case where longitudinal slip ratio is small (typically less than 0.1 on dry surface), as it is during normal driving, the longitudinal tire force is found to be proportional to the slip ratio.
 
 If the longitudinal slip ratio is not small or if the road is slippery, then a nonlinear tire model needs to be used to calculate the longitudinal tire force. The Pacejka “Magic Formula” model ocan be used to model tire forces in this case. 
 
@@ -103,6 +103,8 @@ If the longitudinal slip ratio is not small or if the road is slippery, then a n
 Such a model provides a mathematical description of the vehicle motion without considering the forces that affect the motion. The equations of motion are based purely on geometric relationships governing the system.
 
 ![Screenshot](Files_for_README/Figure_Lateral_motion_1.png)
+
+Vehicle stability control systems that prevent vehicles from spinning and drifting out have been developed and recently commercialized by several automotive manufacturers. Such stability control systems are also often referred to as yaw control systems or electronic stability control systems.
 
 ![Screenshot](Files_for_README/Figure_Yaw_Control_System.png)
 
