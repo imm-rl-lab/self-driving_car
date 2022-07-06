@@ -40,9 +40,10 @@ In general, the car dynamics can be divided into two motion types:
 
 The external longitudinal forces acting on the vehicle include aerodynamic drag forces, gravitational forces, longitudinal tire forces and rolling resistance forces.
 
-![Screenshot](Files_for_README/Figure_Longitudinal_motion_1.png)
+<p align="center"> <img src="Files_for_README/Figure_Longitudinal_motion_1.png" width="500">
 
-![Screenshot](Files_for_README/Figure_Longitudinal_motion_2.png)
+
+<p align="center"> <img src="Files_for_README/Figure_Longitudinal_motion_2.png" width="500">
 
 
 A force balance along the vehicle longitudinal axis yields
@@ -78,7 +79,7 @@ The vertical forces on a tire is called the tire vertical load. The vertical loa
 1. comes from a portion of the weight of the vehicle
 2. is influenced by fore-aft location of the c.g., vehicle longitudinal acceleration, aerodynamic drag forces and grade of the road.
 
-![Screenshot](Files_for_README/Figure_Vertical_loads.png)
+<p align="center"> <img src="Files_for_README/Figure_Vertical_loads.png" width="500">
 
 Let the longitudinal velocity at the tire under consideration be  $V_{x} $ and the equivalent rotational velocity of the tire be  $r_{eff} \omega_{w} $ where  $r_{eff} $ is the effective radius of the tire and  $\omega_{w} $ is the angular velocity of the wheel. Then the longitudinal slip ratio of the tire is defined as
 
@@ -86,11 +87,11 @@ $\sigma_{x} = \frac{r_{ef} \omega_{w} - V_{x}}{V_x}$ during braking
 
 $\sigma_{x} = \frac{r_{ef} \omega_{w} - V_{x}}{r_{ef} \omega_{w}}$ during acceleration
 
-![Screenshot](Files_for_README/Figure_Slip_ratio.png)
+<p align="center"> <img src="Files_for_README/Figure_Slip_ratio.png" width="500">
 
 Coefficient of friction, ratio of the frictional force resisting the motion of two surfaces in contact to the vertical force pressing the two surfaces together. 
 
-![Screenshot](Files_for_README/Figure_Friction_Coefficient.png)
+<p align="center"> <img src="Files_for_README/Figure_Friction_Coefficient.png" width="500">
 
 As can be seen from the figure below, in the case where longitudinal slip ratio is small (typically less than 0.1 on dry surface), as it is during normal driving, the longitudinal tire force is found to be proportional to the slip ratio.
 
@@ -98,15 +99,15 @@ As can be seen from the figure below, in the case where longitudinal slip ratio 
 
 Such a model provides a mathematical description of the vehicle motion without considering the forces that affect the motion. The equations of motion are based purely on geometric relationships governing the system.
 
-![Screenshot](Files_for_README/Figure_Lateral_motion_1.png)
+<p align="center"> <img src="Files_for_README/Figure_Lateral_motion_1.png" width="500">
 
-![Screenshot](Files_for_README/Figure_Lateral_motion_2.png)
+<p align="center"> <img src="Files_for_README/Figure_Lateral_motion_2.png" width="500">
 
 Vehicle stability control systems that prevent vehicles from spinning and drifting out have been developed and recently commercialized by several automotive manufacturers. Such stability control systems are also often referred to as yaw control systems or electronic stability control systems.
 
 Figure below schematically shows the function of a yaw control system. In this figure, the lower curve shows the trajectory that the vehicle would follow in response to a steering input from the driver if the road were dry and had a high tire-road friction coefficient. In this case the high friction coefficient is able to provide the lateral force required by the vehicle to negotiate the curved road. If the coefficient of friction were small or if the vehicle speed were too high, then the vehicle would be unable to follow the nominal motion required by the driver – it would instead travel on a trajectory of larger radius (smaller curvature), as shown in the upper curve of Figure. The function of the yaw control system is to restore the yaw velocity of the vehicle as much as possible to the nominal motion expected by the driver. If the friction coefficient is very small, it might not be possible to entirely achieve the nominal yaw rate motion that would be achieved by the driver on a high friction coefficient road surface. In this case, the yaw control system would partially succeed by making the vehicle’s yaw rate closer to the expected nominal yaw rate, as shown by the middle curve in Figure.
 
-![Screenshot](Files_for_README/Figure_Yaw_Control_System.png)
+<p align="center"> <img src="Files_for_README/Figure_Yaw_Control_System.png" width="500">
 
 Thus, forces and moments from the road act on each tire of the vehicle and highly influence the dynamics of the vehicle. If the longitudinal slip ratio is not small or if the road is slippery, then a nonlinear tire model needs to be used to calculate the longitudinal tire force named The Pacejka “Magic Formula” model. Therefore most algorithms of car control systems use information about the tire-road friction coefficient named $\mu$ and tuned to work with dry, wet or icy coating and having information about this coefficient value allows to subsequently cost control in a more effectively. 
 
