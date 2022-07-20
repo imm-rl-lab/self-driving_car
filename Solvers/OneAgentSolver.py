@@ -30,13 +30,11 @@ def go(env, agent, show, episode_n=100, session_n=1, session_len=10000, agent_le
 
     for episode in range(episode_n):
         sessions = [get_session(env, agent, session_len, agent_learning) for i in range(session_n)]
-        print(f'\r{episode} episode', end='', flush=True)
+        #print(f'\r{episode} episode', end='', flush=True)
         show(env, agent, episode, sessions)
         
         if agent_learning:
             agent.fit(sessions)
             agent.noise.reduce()
-
-    print()
 
     return None
