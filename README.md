@@ -97,6 +97,13 @@ i.e. we stop the motion when the car has passed the segment.
 
 ### Problem 4. Time-optimal problem on a circle segment
 
+This problem is similar to previous one, but, in this case, the car must go through the turn as fast as possible. Moreover, the car must not drive inside a circle of a certain radius. To ensure this, we put the reward $R = - 2 \Delta t$ if the car inside the circle. The obtained trajectories for half, 3/4, and full segment of  the circle are presented below:
+
+![Problem4_1](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem4_1.png)
+![Problem4_2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem4_2.png)
+![Problem4_3](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem4_3.png)
+
+The fastest time for a half circle is **4.3s**, for 3/4 segment is **6.2s**, and for full circle is **7.1s**.
 
 
 ## References
