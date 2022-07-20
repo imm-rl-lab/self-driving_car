@@ -1,6 +1,8 @@
 import numpy as np
+import sys, os
 from numpy.linalg import norm
-from Environments.ArrivalCar.CarDynamics import CarDynamics
+sys.path.insert(0, os.path.abspath('../..'))
+from arrival_model.Environments.ArrivalCar.CarDynamics import CarDynamics
 
 
 class ArrivalCar:
