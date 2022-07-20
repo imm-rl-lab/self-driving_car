@@ -6,28 +6,6 @@ The repository presents the results of a research project implemented in the fra
 
 **Advisors:** Vladimir Bulaev
 
-## Motivation
-
-A variety of driver assistance systems are being developed by automotive manufacturers to automate mundane driving operations, reduce driver burden and thus reduce highway accidents. Examples of such driver assistance systems under development include
-
-1. collision avoidance systems which automatically detect slower moving preceding vehicles and provide warning and brake assist to the driver
-
-2. adaptive cruise control (ACC) systems which are enhanced cruise control systems and enable preceding vehicles to be followed automatically at a safe distance
-
-3. lane departure warning systems
-
-4. lane keeping systems which automate steering on straight roads
-
-5. vision enhancement night vision systems
-
-6. driver condition monitoring systems which detect and provide
-warning for driver drowsiness, as well as for obstacles and pedestrians
-
-7. safety event recorders and automatic collision and severity
-notification systems
-
-These technologies will help reduce driver burden and make drivers less likely to be involved in accidents. This can also help reduce the resultant traffic congestion that accidents tend to cause.
-
 ## Dynamic model
 
 In general, the car dynamics can be divided into two motion types:
