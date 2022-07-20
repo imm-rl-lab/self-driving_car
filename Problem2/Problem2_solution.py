@@ -33,8 +33,3 @@ if __name__ == "__main__":
 
     with open(f'results.npy', 'wb') as f:
         np.save(f, predicted_mu)
-
-
-
-
-
