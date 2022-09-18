@@ -44,7 +44,7 @@ Such a model provides a mathematical description of the vehicle motion without c
 
 <p align="center"> <img src="Pictures/Figure_Lateral_motion_2.png" width="500"></p>
 
-The forces and moments from the road act on each tire of the vehicle and highly influence the dynamics of the vehicle Thus the lower curve  in Figure below shows the trajectory that the vehicle would follow in response to a steering input from the driver if the road were dry and had a high tire-road friction coefficient. In this case the high friction coefficient is able to provide the lateral force required by the vehicle to negotiate the curved road. If the coefficient of friction were small or if the vehicle speed were too high, then the vehicle would be unable to follow the nominal motion required by the driver – it would instead travel on a trajectory of larger radius (smaller curvature), as shown in the upper curve of Figure. If the friction coefficient is very small, it might not be possible to entirely achieve the nominal yaw rate motion that would be achieved by the driver on a high friction coefficient road surface.
+The forces and moments from the road act on each tire of the vehicle and highly influence the dynamics of the vehicle. Thus the lower curve  in Figure below shows the trajectory that the vehicle would follow in response to a steering input from the driver if the road were dry and had a high tire-road friction coefficient. In this case the high friction coefficient is able to provide the lateral force required by the vehicle to negotiate the curved road. If the coefficient of friction were small or if the vehicle speed were too high, then the vehicle would be unable to follow the nominal motion required by the driver – it would instead travel on a trajectory of larger radius (smaller curvature), as shown in the upper curve of Figure. If the friction coefficient is very small, it might not be possible to entirely achieve the nominal yaw rate motion that would be achieved by the driver on a high friction coefficient road surface.
 
 <p align="center"> <img src="Pictures/Figure_Yaw_Control_System.png" width="500"></p>
 
@@ -64,7 +64,7 @@ To solve the problem, we use cross-entropy method (CEM). Its parameters and othe
 
 ### Problem 2. $\mu$ parameter estimation under data perturbation
 
-Since a real car and its model can be different, it is important to study the stability issue of the algorithm performance with respect to the car parameters (such as length, mass, tire parameters, etc.). Within our experements, we fix $\mu$, control actions,
+Since a real car and its model can be different, it is important to study the stability issue of the algorithm performance with respect to the car parameters (such as length, mass, tire parameters, etc.). Within our experements, we fix $\mu$, control actions, and initial points, but perturb all parameters of the car model by 10%. We make 10 runs. The results of the algorithm are shown in the graph below.
 
 ### Problem 3. Time-optimal problem on a straight line segment
 
