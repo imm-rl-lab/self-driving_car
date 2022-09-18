@@ -89,7 +89,7 @@ We also use CEM algorithm. Its results are presented below.
 
 The figure shows that the algorithms steadily converges to **8.6sec**. In order to check the optimality of this value, look at the following figure:
 
-![Problem3_2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem3_1.png)
+![Problem3_2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem3_2.png)
 
 This figure shows the dependence of force on $\sigma$. It is known that the optimal control provides $\sigma$ such that the maximum of this graph is achieved. In our experiment, we obtain $\sigma$ that coincides quite closely with the optimal. This gives us additional confidence to say that the found control is optimal.
 
