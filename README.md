@@ -83,7 +83,9 @@ $$
 
 i.e. we stop the motion when the car has passed the segment.
 
-???
+We also use CEM algorithm. Its results are presented below. 
+
+![Problem3_1](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem3_1.png)
 
 
 
