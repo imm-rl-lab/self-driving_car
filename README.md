@@ -66,6 +66,8 @@ To solve the problem, we use cross-entropy method (CEM). Its parameters and othe
 
 Since a real car and its model can be different, it is important to study the stability issue of the algorithm performance with respect to the car parameters (such as length, mass, tire parameters, etc.). Within our experements, we fix $\mu$, control actions, and initial points, but perturb all parameters of the car model by 10%. We make 10 runs. The results of the algorithm are shown in the graph below.
 
+![Problem2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem2.png)
+
 ### Problem 3. Time-optimal problem on a straight line segment
 
 Let us fix a car model, $\mu$ parameter, and a straight line segment. Our aim is to find control actions that provides the fastest possible finish of the car model. 
