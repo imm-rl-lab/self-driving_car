@@ -68,6 +68,10 @@ Since a real car and its model can be different, it is important to study the st
 
 ![Problem2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem2.png)
 
+Blue line shows true $\mu$. Red points demonstrate the results of the algorithm, when algorithm works with the perturbed car models. Green points demonstrate the results of the algorithm, when algorithm works with the fixed car model, but $\mu$ is substituted into the perturbed model. 
+
+The results show the algorithm gets values quite close to the true $\hat{\mu}$ which says about its stability.
+
 ### Problem 3. Time-optimal problem on a straight line segment
 
 Let us fix a car model, $\mu$ parameter, and a straight line segment. Our aim is to find control actions that provides the fastest possible finish of the car model. 
