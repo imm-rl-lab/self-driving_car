@@ -62,6 +62,8 @@ is the reward function, where  $I$ is the set of indexes of observed coordinates
 
 To solve the problem, we use cross-entropy method (CEM). Its parameters and other details of the experiment can be found in ???.
 
+*TODO: figure*
+
 ### Problem 2. $\mu$ parameter estimation under data perturbation
 
 Since a real car and its model can be different, it is important to study the stability issue of the algorithm performance with respect to the car parameters (such as length, mass, tire parameters, etc.). Within our experements, we fix $\mu$, control actions, and initial points, but perturb all parameters of the car model by 10%. We make 10 runs. The results of the algorithm are shown in the graph below.
