@@ -60,9 +60,9 @@ $R = \int\limits_0^1\bigg( \sum\limits_{i \in I} |\hat{x}_i(t) - x_i(t)|\bigg) d
 
 is the reward function, where  $I$ is the set of indexes of observed coordinates,  $\hat{x}$ is the realized motion of the car with unknown  $\hat{\mu}$, and  $x_i$ is the motion of the car model dependent on choice of  $\mu$. We aims to find  $\mu_0$ such that  $R = 0$  and verify the equality  $\mu_0 = \hat{\mu}$.
 
-To solve the problem, we use cross-entropy method (CEM). Its parameters and other details of the experiment can be found in ???.
+To solve the problem, we use cross-entropy method (CEM).
 
-*TODO: figure*
+![Problem2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem1.png)
 
 ### Problem 2. $\mu$ parameter estimation under data perturbation
 
