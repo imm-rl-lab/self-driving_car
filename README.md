@@ -64,6 +64,8 @@ To solve the problem, we use cross-entropy method (CEM).
 
 ![Problem2](https://github.com/imm-rl-lab/self-driving_car/blob/main/Pictures/Problem1.png)
 
+The obtained results show that for the true value of $\hat{\mu} = 0.98$, the algorithm obtains value of $\mu = 1$, which is close enough to the true.
+
 ### Problem 2. $\mu$ parameter estimation under data perturbation
 
 Since a real car and its model can be different, it is important to study the stability issue of the algorithm performance with respect to the car parameters (such as length, mass, tire parameters, etc.). Within our experements, we fix $\mu$, control actions, and initial points, but perturb all parameters of the car model by 10%. We make 10 runs. The results of the algorithm are shown in the graph below.
